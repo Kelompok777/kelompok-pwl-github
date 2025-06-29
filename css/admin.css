@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #3bb9ff;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 210px;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 40px;    /* Atur lebar gambar */
+    height: auto;   /* Biarkan tinggi menyesuaikan agar proporsi tetap */
+    margin-right: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.menu a span {
+    margin-left: 2px;
+}
+
+.logout-container {
+    margin-top: 30px;
+}
+
+.logout {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: #3bb9ff;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.analyse {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Table */
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn-detail {
+    background-color: #35dc4e;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-detail:hover,
+.btn-edit:hover,
+.btn-delete:hover {
+    opacity: 0.4;
+}
+
+.aksi-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#detailModal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+    overflow-y: auto; 
+    max-height: 60vh;
+    border-radius: 10px;
+}
+
+#detailModal h3 {
+    margin-bottom: 10px;
+}
+
+#detailModal p {
+    word-wrap: break-word; 
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+#detailModal span {
+    display: block;
+}

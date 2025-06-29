@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Halaman Login */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+
+    /* Flex untuk center semua konten */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #3bb9ff;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.left {
+    max-width: 300px;
+    font-size: 16px;
+}
+
+.login-box {
+    background-color: #3bb9ff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.input-group .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: red;
+}
+
+/* Halaman Utama */

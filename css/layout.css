@@ -1,0 +1,107 @@
+header {
+    position: fixed;
+    background-color: #3bb9ff;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    height: 35px;
+    width: 97.5%;
+    top: 0;
+    left: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .title {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 65px;
+    right: -350px;
+    width: 250px;
+    height: 100vh;
+    background-color: #ccc;
+    transition: right 0.3s ease;
+    z-index: 900;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sidebar li img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar a:hover {
+    color: #09e0c3;
+}
+
+
+.logout-container {
+    margin-top: 420px;
+}
+
+.logout-container .logout {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-container .logout-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}

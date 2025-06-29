@@ -1,0 +1,45 @@
+/* RESET */
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    background: url("../image/background.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+    position: relative;
+}
+
+/* OVERLAY CONTENT */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* transparan hitam */
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.selamat-datang {
+    font-size: 32px;
+    color: #fff;
+}
